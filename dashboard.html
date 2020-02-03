@@ -1,0 +1,1520 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+        <!--Responsive DataTable CSS-->
+        <link rel="stylesheet" href="css/dataTables.bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="css/responsive.bootstrap.min.css" type="text/css">
+
+        <link rel="stylesheet" href="css/fontawesome.css" type="text/css">
+        <link rel="stylesheet" href="css/datepicker.css" type="text/css">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link rel="stylesheet" href="css/select2.min.css" type="text/css">
+        <link rel="stylesheet" href="css/media-query.css" type="text/css">
+        <title>Agri Portfolio Management System</title>
+    </head>
+    <body>
+        <div class="container-fluid mp0">
+            <!--Loader Start-->
+            <div class="loading" hidden>
+                <div class="mask"></div>
+                <div class="cssload-loader"><span class="cssload-loader-inner"></span></div>
+                <div class="processRequest">Processing your request</div>
+            </div>
+            <!--Loader End-->
+            <div class="dashboad-main-container">
+                <!-- Sidebar Starts -->
+                <div id="sidebar" class="sidebar-open ">
+                    <!-- Sidebar Content Starts -->
+                    <div class="sidebar-content">
+                        <!-- LOGO Start -->
+                        <div class="left-logo">
+                            <span class="sidebar-open-logo">
+                                <div class="icici-logo"><img src="images/logo.svg"></div>
+                            </span>
+                            <span class="sidebar-close-logo"><div class="icici-logo-icon"><img src="images/logo-icon.svg"></div></span>
+                        </div>
+                        <!-- LOGO Ends -->
+
+
+                        <!-- Sidebar Menu Starts -->
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="sidebar-menu">
+                                    <!--Search Box Start-->
+                                    <div class="search-box">
+                                        <form role="form">
+                                            <input type="text" name="search" placeholder="Search...">
+                                        </form>
+                                    </div>
+                                    <!--Search Box End-->
+                                    <ul>
+										<li data-toggle="tooltip" title="Dashboard" class="active"><a href="dashboard.html"><span class="sidebar-icon"><img src="images/dashboard-icon.svg"></span><span class="sidebar-label">Dashboard</span></a> <div class="sidebar-menu-bg"></div></li>
+                                        <li data-toggle="tooltip" title="My Queue"><a href="#"><span class="sidebar-icon"><img src="images/queue-icon.svg"></span><span class="sidebar-label">My Queue</span></a><div class="sidebar-menu-bg"></div></li>
+                                        <li data-toggle="tooltip" title="Application"><a href="#"><span class="sidebar-icon"><img src="images/application-icon.svg"></span><span class="sidebar-label">Application</span></a><div class="sidebar-menu-bg"></div></li>
+                                        <li data-toggle="tooltip" title="TSR"><a href="#"><span class="sidebar-icon"><img src="images/tsr-icon.svg"></span><span class="sidebar-label">TSR</span></a><div class="sidebar-menu-bg"></div></li> 
+                                        <li data-toggle="tooltip" title="FI"><a href="#"><span class="sidebar-icon"><img src="images/fi-icon.svg"></span><span class="sidebar-label">FI</span></a><div class="sidebar-menu-bg"></div></li> 
+                                        <li data-toggle="tooltip" title="Valuation"><a href="#"><span class="sidebar-icon"><img src="images/valuation-icon.svg"></span><span class="sidebar-label">Valuation</span></a><div class="sidebar-menu-bg"></div></li> 
+                                        <li data-toggle="tooltip" title="Query"><a href="#"><span class="sidebar-icon"><img src="images/query-icon.svg"></span><span class="sidebar-label">Query</span></a><div class="sidebar-menu-bg"></div></li> 
+                                        <li data-toggle="tooltip" title="Agency"><a href="#"><span class="sidebar-icon"><img src="images/agency-icon.svg"></span><span class="sidebar-label">Agency</span></a><div class="sidebar-menu-bg"></div></li> 
+                                        <li data-toggle="tooltip" title="Lawyer"><a href="#"><span class="sidebar-icon"><img src="images/lawyer-icon.svg"></span><span class="sidebar-label">Lawyer</span></a><div class="sidebar-menu-bg"></div></li>
+										<li data-toggle="tooltip" title="Covenent"><a href="#"><span class="sidebar-icon"><img src="images/covenent-icon.svg"></span><span class="sidebar-label">Covenent</span></a><div class="sidebar-menu-bg"></div></li>
+                                        <li data-toggle="tooltip" title="Review"><a href="#"><span class="sidebar-icon"><img src="images/review-icon.svg"></span><span class="sidebar-label">Review</span></a><div class="sidebar-menu-bg"></div></li>
+                                        <li data-toggle="tooltip" title="Renewal"><a href="#"><span class="sidebar-icon"><img src="images/renewal-icon.svg"></span><span class="sidebar-label">Renewal</span></a><div class="sidebar-menu-bg"></div></li>
+                                        <li data-toggle="tooltip" title="PDD"><a href="#"><span class="sidebar-icon"><img src="images/pdd-icon.svg"></span><span class="sidebar-label">PDD</span></a><div class="sidebar-menu-bg"></div></li>
+                                        <li data-toggle="tooltip" title="Portfolio"><a href="#"><span class="sidebar-icon"><img src="images/portfolio-icon.svg"></span><span class="sidebar-label">Portfolio</span></a><div class="sidebar-menu-bg"></div></li>
+                                        <li data-toggle="tooltip" title="Servicing"><a href="#"><span class="sidebar-icon"><img src="images/servicing-icon.svg"></span><span class="sidebar-label">Servicing</span></a><div class="sidebar-menu-bg"></div></li>
+                                        <li data-toggle="tooltip" title="Masters"><a href="#"><span class="sidebar-icon"><img src="images/masters-icon.svg"></span><span class="sidebar-label">Masters</span></a><div class="sidebar-menu-bg"></div></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Sidebar Menu Ends -->
+                    </div>
+                    <!-- Sidebar Content Ends -->
+                    <div class="close-sidebar" id="close-sidebar-btn">
+                        <i class="fa fa-dedent"></i>
+                    </div>
+                    <div class="close-sidebar" id="close-sidebar-btn-responsive">
+                        <i class="fa fa-dedent"></i>
+                    </div>
+                    <div class="sidebar-bg"></div>
+                </div>
+                <!-- Sidebar Ends -->
+                <!-- Dashboard left Body content starts -->
+                <div id="dashboard-right-body">
+                    <div id="dashboard-body">
+                        <!-- Header bar starts -->
+                        <div class="col-sm-12 header">
+                            <ul class="top-navigation">
+								<li class="project-title">Agri Portfolio Management System</li>
+								<!--Quick Link Start-->
+                                <li><a href="#"><span class="fa fa-home"></span></a></li>
+                                <li><a href="#"><span class="fa fa-bell-o"></span></a></li>
+                                <li><a href="#"><span class="fa fa-download"></span></a></li>
+                                <!--Quick Link End-->
+                                
+                                <!--Logout Start-->
+                                <li class="pull-right logout-btn"><a href="login.html"><span class="fa fa-sign-out"></span></a></li>
+                                <!--Logout End-->
+                                <!--User Name Start-->
+                                <li class="pull-right username">Welcome <b>Thirupathi</b> </li>
+                                <!--User Name End-->
+                            </ul>
+                        </div>
+                        <!-- Header bar ends -->
+
+                        <div class="second-level">
+                            <!-- Breadcrumb start -->
+                            <div class="breadcrumb col-md-4 col-xs-12">
+                                <a href="#"> Dashboard </a> > <a href="#">Application</a> > <a href="#" class="active">Sourcing</a>
+                            </div>
+                            <!-- Breadcrumb end -->
+
+                            <!--Action Buttons start -->
+                            <div class="action-button col-md-8 col-xs-12">
+                                <input type="button" value="Recalculate" class="button default-button" />
+                                <input type="button" value="Queries" class="button default-button" />
+                                <input type="button" value="Decision" class="button default-button" />
+                                <input type="button" value="Funding" class="button default-button" />
+                                <input type="button" value="Covenant" class="button default-button" />
+                                <input type="button" value="Note" class="button default-buttons" />
+                            </div>
+                            <!--Action Buttons end -->
+                        </div>
+                        
+                        <!-- Body Content Starts -->
+                        <div class="main-body-content">
+                            <div class="row">
+                                <!-- MAIN TAB NAV START -->
+                                <div class="row">
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <!-- Nav tabs -->
+                                        <div class="scroller main-tab-scroller-left"><i class="glyphicon glyphicon-chevron-left"></i></div>
+                                        <div class="scroller main-tab-scroller-right"><i class="glyphicon glyphicon-chevron-right"></i></div>
+                                        <div class="main-tab-nav-container">
+                                            <ul class="main-tab-nav-inner" role="tablist">
+                                                <li role="presentation" class="active"><a href="#application" aria-controls="application" role="tab" data-toggle="tab">Application</a></li>
+                                                <li role="presentation"><a href="#applicant" aria-controls="applicant" role="tab" data-toggle="tab">Applicant</a></li>
+                                                <li role="presentation"><a href="#assets" aria-controls="assets" role="tab" data-toggle="tab">Assets</a></li>
+                                                <li role="presentation"><a href="#income" aria-controls="income" role="tab" data-toggle="tab">Income</a></li>
+                                                <li role="presentation"><a href="#verification" aria-controls="verification" role="tab" data-toggle="tab">Verification</a></li>
+                                                <li role="presentation"><a href="#docs" aria-controls="docs" role="tab" data-toggle="tab">Docs</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- TAB BODY CONTENT START -->
+                                <div class="row main-tab-body-container">
+                                    <div class="tab-content col-md-12 col-sm-12 col-xs-12">
+                                        <!-- Tab BODY ONE start -->
+                                        <div role="tabpanel" class="tab-pane fade in active" id="application">
+                                            <!-- Sub Tab Start -->
+                                            <div class="sub-tab-section">
+                                                <!--Sub Menu Start-->
+                                                <ul class="sub-menu nav">
+                                                    <li class="active"><a data-toggle="pill" href="#sourcing">Sourcing</a></li>
+                                                    <li><a data-toggle="pill" href="#customer-detail">Customer Detail</a></li>
+                                                    <li><a data-toggle="pill" href="#express-loan">Express Loan</a></li>
+                                                    <li><a data-toggle="pill" href="#location">Location</a></li>
+                                                </ul>
+                                                <!--Sub Menu End-->
+                                                <div class="tab-content">
+                                                    <!--Sourcing-->
+                                                    <div id="sourcing" class="tab-pane fade in active">
+                                                        <form role="form">
+                                                            <div class="col-md-3 col-sm-4 col-xs-12">
+                                                                <div class="form-group">
+                                                                    <label for="name">Team</label>
+                                                                    <input type="text" class="form-control" placeholder="Enter Team">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-3 col-sm-4 col-xs-12">
+                                                                <div class="form-group">
+                                                                    <div id="datepicker" class="input-group date" data-date-format="dd-mm-yyyy">
+                                                                        <label>Application Date <span class="required">*</span></label>
+                                                                        <input class="form-control" type="text">
+                                                                        <span class="input-group-addon datepicker-icon"><i class="glyphicon glyphicon-calendar"></i></span>
+                                                                        
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-3 col-sm-4 col-xs-12">
+                                                                <div class="form-group">
+                                                                    <label class="radio-label">Officer</label>
+                                                                    <label class="radio">
+                                                                        <input type="radio" name="r" value="1" checked="">
+                                                                        <span>Radio 1</span>
+                                                                    </label>
+                                                                    <label class="radio">
+                                                                        <input type="radio" name="r" value="2">
+                                                                        <span>Radio 2</span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-3 col-sm-4 col-xs-12">
+                                                                <div class="form-group">
+                                                                    <label for="name">Team</label>
+                                                                    <input type="text" class="form-control" placeholder="Enter Team">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-3 col-sm-4 col-xs-12">
+                                                                <div class="form-group">
+                                                                    <label for="name">Team</label>
+                                                                    <input type="text" class="form-control" placeholder="Enter Team">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-3 col-sm-4 col-xs-12">
+                                                                <div class="form-group">
+                                                                    <label for="name">Team</label>
+                                                                    <input type="text" class="form-control" placeholder="Enter Team">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-3 col-sm-4 col-xs-12">
+                                                                <div class="form-group">
+                                                                    <label for="name">Team</label>
+                                                                    <input type="text" class="form-control" placeholder="Enter Team">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-3 col-sm-4 col-xs-12">
+                                                                <div class="form-group">
+                                                                    <label for="name">Team</label>
+                                                                    <input type="text" class="form-control" placeholder="Enter Team">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3 col-sm-4 col-xs-12">
+                                                                <div class="form-group">
+                                                                    <label for="name">Team</label>
+                                                                    <input type="text" class="form-control" placeholder="Enter Team">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-3 col-sm-4 col-xs-12">
+                                                                <div class="form-group">
+                                                                    <label for="name">Team</label>
+                                                                    <select class="form-control custom-select" value="">
+                                                                        <option value="1">123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 </option>
+                                                                        <option value="2">345</option>
+                                                                        <option value="3">567</option>
+                                                                        <option value="4">789</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-3 col-sm-4 col-xs-12">
+                                                                <div class="form-group">
+                                                                    <label class="radio-label">Officer</label>
+                                                                    <label class="radio">
+                                                                        <input type="radio" name="r" value="1" checked="">
+                                                                        <span>Radio 1</span>
+                                                                    </label>
+                                                                    <label class="radio">
+                                                                        <input type="radio" name="r" value="2">
+                                                                        <span>Radio 2</span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-3 col-sm-4 col-xs-12">
+                                                                <div class="form-group">
+                                                                    <label for="name">Team</label>
+                                                                    <input type="text" class="form-control" placeholder="Enter Team">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-3 col-sm-4 col-xs-12">
+                                                                <div class="form-group">
+                                                                    <label for="name">Team</label>
+                                                                    <input type="text" class="form-control" placeholder="Enter Team">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-3 col-sm-4 col-xs-12">
+                                                                <div class="form-group">
+                                                                    <label for="name">Team</label>
+                                                                    <input type="text" class="form-control" placeholder="Enter Team">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-3 col-sm-4 col-xs-12">
+                                                                <div class="form-group">
+                                                                    <label for="name">Team</label>
+                                                                    <input type="text" class="form-control" placeholder="Enter Team">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-3 col-sm-4 col-xs-12">
+                                                                <div class="form-group">
+                                                                    <label for="name">Team</label>
+                                                                    <input type="text" class="form-control" placeholder="Enter Team">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3 col-sm-4 col-xs-12">
+                                                                <div class="form-group">
+                                                                    <label for="name">Team</label>
+                                                                    <input type="text" class="form-control" placeholder="Enter Team">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-3 col-sm-4 col-xs-12">
+                                                                <div class="form-group">
+                                                                    <label for="name">Team</label>
+                                                                    <select class="form-control custom-select" value="">
+                                                                        <option value="1">123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 123 </option>
+                                                                        <option value="2">345</option>
+                                                                        <option value="3">567</option>
+                                                                        <option value="4">789</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-3 col-sm-4 col-xs-12">
+                                                                <div class="form-group">
+                                                                    <label class="radio-label">Officer</label>
+                                                                    <label class="radio">
+                                                                        <input type="radio" name="r" value="1" checked="">
+                                                                        <span>Radio 1</span>
+                                                                    </label>
+                                                                    <label class="radio">
+                                                                        <input type="radio" name="r" value="2">
+                                                                        <span>Radio 2</span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-3 col-sm-4 col-xs-12">
+                                                                <div class="form-group">
+                                                                    <label for="name">Team</label>
+                                                                    <input type="text" class="form-control" placeholder="Enter Team">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-3 col-sm-4 col-xs-12">
+                                                                <div class="form-group">
+                                                                    <label for="name">Team</label>
+                                                                    <input type="text" class="form-control" placeholder="Enter Team">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-3 col-sm-4 col-xs-12">
+                                                                <div class="form-group">
+                                                                    <label for="name">Team</label>
+                                                                    <input type="text" class="form-control" placeholder="Enter Team">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-3 col-sm-4 col-xs-12">
+                                                                <div class="form-group">
+                                                                    <label for="name">Team</label>
+                                                                    <input type="text" class="form-control" placeholder="Enter Team">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-3 col-sm-4 col-xs-12">
+                                                                <div class="form-group">
+                                                                    <label for="name">Team</label>
+                                                                    <input type="text" class="form-control" placeholder="Enter Team">
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+
+                                                    <!--Customer Detail-->
+                                                    <div id="customer-detail" class="tab-pane fade">
+                                                        <!-- tab body content panel starts -->
+                                                        <div class="collapse-group">
+                                                            <!-- Section 1 Starts -->
+                                                            <div class="panel panel-default">
+                                                                <div class="panel-heading" role="tab" id="headingOne">
+                                                                    <h4 class="panel-title">
+                                                                        <a role="button" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="trigger ">
+                                                                            Collapsible Group Item #1
+                                                                        </a>
+                                                                    </h4>
+                                                                </div>
+                                                                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne" area-expanded="true">
+                                                                    <div class="panel-body">
+                                                                        <div class="row">
+                                                                            <!-- Horizontal Form Starts -->
+                                                                            <form role="form">
+                                                                                <div class="col-md-3 col-sm-4 col-xs-12">
+                                                                                    <div class="form-group">
+                                                                                        <label for="name">Team</label>
+                                                                                        <input type="text" class="form-control" placeholder="Enter Team">
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="col-md-3 col-sm-4 col-xs-12">
+                                                                                    <div class="form-group">
+                                                                                        <label for="name">Team</label>
+                                                                                        <input type="text" class="form-control" placeholder="Enter Team">
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="col-md-3 col-sm-4 col-xs-12">
+                                                                                    <div class="form-group">
+                                                                                        <label for="name">Team</label>
+                                                                                        <input type="text" class="form-control" placeholder="Enter Team">
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="col-md-3 col-sm-4 col-xs-12">
+                                                                                    <div class="form-group">
+                                                                                        <label for="name">Team</label>
+                                                                                        <input type="text" class="form-control" placeholder="Enter Team">
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="col-md-3 col-sm-4 col-xs-12">
+                                                                                    <div class="form-group">
+                                                                                        <label for="name">Team</label>
+                                                                                        <input type="text" class="form-control" placeholder="Enter Team">
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="col-md-3 col-sm-4 col-xs-12">
+                                                                                    <div class="form-group">
+                                                                                        <label for="name">Team</label>
+                                                                                        <input type="text" class="form-control" placeholder="Enter Team">
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="col-md-3 col-sm-4 col-xs-12">
+                                                                                    <div class="form-group">
+                                                                                        <label for="name">Team</label>
+                                                                                        <input type="text" class="form-control" placeholder="Enter Team">
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="col-md-3 col-sm-4 col-xs-12">
+                                                                                    <div class="form-group">
+                                                                                        <label for="name">Team</label>
+                                                                                        <input type="text" class="form-control" placeholder="Enter Team">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </form>
+                                                                        
+                                                                            <!-- HOrizontal Form Ends -->
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Section 1 Ends -->
+                                                            <!-- Section Starts  -->
+                                                            <div class="panel panel-default">
+                                                                <div class="panel-heading" role="tab" id="headingTwo">
+                                                                    <h4 class="panel-title">
+                                                                        <a role="button" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" class="trigger collapsed">
+                                                                            Collapsible Group Item #2
+                                                                        </a>
+                                                                    </h4>
+                                                                </div>
+                                                                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                                                    <div class="panel-body">
+                                                                        <div class="row">
+                                                                            <form role="form">
+                                                                                <div class="col-md-3 col-sm-4 col-xs-12">
+                                                                                    <div class="form-group">
+                                                                                        <label for="name">Team</label>
+                                                                                        <input type="text" class="form-control" placeholder="Enter Team">
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="col-md-3 col-sm-4 col-xs-12">
+                                                                                    <div class="form-group">
+                                                                                        <label for="name">Team</label>
+                                                                                        <input type="text" class="form-control" placeholder="Enter Team">
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="col-md-3 col-sm-4 col-xs-12">
+                                                                                    <div class="form-group">
+                                                                                        <label for="name">Team</label>
+                                                                                        <input type="text" class="form-control" placeholder="Enter Team">
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="col-md-3 col-sm-4 col-xs-12">
+                                                                                    <div class="form-group">
+                                                                                        <label for="name">Team</label>
+                                                                                        <input type="text" class="form-control" placeholder="Enter Team">
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="col-md-3 col-sm-4 col-xs-12">
+                                                                                    <div class="form-group">
+                                                                                        <label for="name">Team</label>
+                                                                                        <input type="text" class="form-control" placeholder="Enter Team">
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="col-md-3 col-sm-4 col-xs-12">
+                                                                                    <div class="form-group">
+                                                                                        <label for="name">Team</label>
+                                                                                        <input type="text" class="form-control" placeholder="Enter Team">
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="col-md-3 col-sm-4 col-xs-12">
+                                                                                    <div class="form-group">
+                                                                                        <label for="name">Team</label>
+                                                                                        <input type="text" class="form-control" placeholder="Enter Team">
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="col-md-3 col-sm-4 col-xs-12">
+                                                                                    <div class="form-group">
+                                                                                        <label for="name">Team</label>
+                                                                                        <input type="text" class="form-control" placeholder="Enter Team">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </form>
+                                                                        
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Section 2 Ends -->
+                                                        </div>
+                                                        <!-- tab body content panel ends -->
+                                                    </div>
+
+                                                    <!--Express Loan-->
+                                                    <div id="express-loan" class="tab-pane fade">
+                                                        <!--table start-->
+                                                        <div class="fixed-height">
+                                                            <table class="table table-striped">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th scope="col">Name</th>
+                                                                        <th scope="col">Position</th>
+                                                                        <th scope="col">Office</th>
+                                                                        <th scope="col">Age</th>
+                                                                        <th scope="col">Start date</th>
+                                                                        <th scope="col">Salary</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <select class="form-control table-fields" value="">
+                                                                                <option value=""></option>
+                                                                                <option value="1">123</option>
+                                                                                <option value="2">345</option>
+                                                                                <option value="3">567</option>
+                                                                                <option value="4">789</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td class="text-center">
+                                                                            <input type="button" class="delete-button">
+                                                                            <input type="button" class="add-button">
+                                                                            <input type="button" class="view-button">
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <select class="form-control table-fields" value="">
+                                                                                <option value=""></option>
+                                                                                <option value="1">123</option>
+                                                                                <option value="2">345</option>
+                                                                                <option value="3">567</option>
+                                                                                <option value="4">789</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td class="text-center">
+                                                                            <input type="button" class="delete-button">
+                                                                            <input type="button" class="add-button">
+                                                                            <input type="button" class="view-button">
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <select class="form-control table-fields" value="">
+                                                                                <option value=""></option>
+                                                                                <option value="1">123</option>
+                                                                                <option value="2">345</option>
+                                                                                <option value="3">567</option>
+                                                                                <option value="4">789</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td class="text-center">
+                                                                            <input type="button" class="delete-button">
+                                                                            <input type="button" class="add-button">
+                                                                            <input type="button" class="view-button">
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <select class="form-control table-fields" value="">
+                                                                                <option value=""></option>
+                                                                                <option value="1">123</option>
+                                                                                <option value="2">345</option>
+                                                                                <option value="3">567</option>
+                                                                                <option value="4">789</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td class="text-center">
+                                                                            <input type="button" class="delete-button">
+                                                                            <input type="button" class="add-button">
+                                                                            <input type="button" class="view-button">
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <select class="form-control table-fields" value="">
+                                                                                <option value=""></option>
+                                                                                <option value="1">123</option>
+                                                                                <option value="2">345</option>
+                                                                                <option value="3">567</option>
+                                                                                <option value="4">789</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td class="text-center">
+                                                                            <input type="button" class="delete-button">
+                                                                            <input type="button" class="add-button">
+                                                                            <input type="button" class="view-button">
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <select class="form-control table-fields" value="">
+                                                                                <option value=""></option>
+                                                                                <option value="1">123</option>
+                                                                                <option value="2">345</option>
+                                                                                <option value="3">567</option>
+                                                                                <option value="4">789</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td class="text-center">
+                                                                            <input type="button" class="delete-button">
+                                                                            <input type="button" class="add-button">
+                                                                            <input type="button" class="view-button">
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <select class="form-control table-fields" value="">
+                                                                                <option value=""></option>
+                                                                                <option value="1">123</option>
+                                                                                <option value="2">345</option>
+                                                                                <option value="3">567</option>
+                                                                                <option value="4">789</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td class="text-center">
+                                                                            <input type="button" class="delete-button">
+                                                                            <input type="button" class="add-button">
+                                                                            <input type="button" class="view-button">
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <select class="form-control table-fields" value="">
+                                                                                <option value=""></option>
+                                                                                <option value="1">123</option>
+                                                                                <option value="2">345</option>
+                                                                                <option value="3">567</option>
+                                                                                <option value="4">789</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td class="text-center">
+                                                                            <input type="button" class="delete-button">
+                                                                            <input type="button" class="add-button">
+                                                                            <input type="button" class="view-button">
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <select class="form-control table-fields" value="">
+                                                                                <option value=""></option>
+                                                                                <option value="1">123</option>
+                                                                                <option value="2">345</option>
+                                                                                <option value="3">567</option>
+                                                                                <option value="4">789</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td class="text-center">
+                                                                            <input type="button" class="delete-button">
+                                                                            <input type="button" class="add-button">
+                                                                            <input type="button" class="view-button">
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <select class="form-control table-fields" value="">
+                                                                                <option value=""></option>
+                                                                                <option value="1">123</option>
+                                                                                <option value="2">345</option>
+                                                                                <option value="3">567</option>
+                                                                                <option value="4">789</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td class="text-center">
+                                                                            <input type="button" class="delete-button">
+                                                                            <input type="button" class="add-button">
+                                                                            <input type="button" class="view-button">
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <select class="form-control table-fields" value="">
+                                                                                <option value=""></option>
+                                                                                <option value="1">123</option>
+                                                                                <option value="2">345</option>
+                                                                                <option value="3">567</option>
+                                                                                <option value="4">789</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td class="text-center">
+                                                                            <input type="button" class="delete-button">
+                                                                            <input type="button" class="add-button">
+                                                                            <input type="button" class="view-button">
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <select class="form-control table-fields" value="">
+                                                                                <option value=""></option>
+                                                                                <option value="1">123</option>
+                                                                                <option value="2">345</option>
+                                                                                <option value="3">567</option>
+                                                                                <option value="4">789</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td class="text-center">
+                                                                            <input type="button" class="delete-button">
+                                                                            <input type="button" class="add-button">
+                                                                            <input type="button" class="view-button">
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <select class="form-control table-fields" value="">
+                                                                                <option value=""></option>
+                                                                                <option value="1">123</option>
+                                                                                <option value="2">345</option>
+                                                                                <option value="3">567</option>
+                                                                                <option value="4">789</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td class="text-center">
+                                                                            <input type="button" class="delete-button">
+                                                                            <input type="button" class="add-button">
+                                                                            <input type="button" class="view-button">
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <select class="form-control table-fields" value="">
+                                                                                <option value=""></option>
+                                                                                <option value="1">123</option>
+                                                                                <option value="2">345</option>
+                                                                                <option value="3">567</option>
+                                                                                <option value="4">789</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td class="text-center">
+                                                                            <input type="button" class="delete-button">
+                                                                            <input type="button" class="add-button">
+                                                                            <input type="button" class="view-button">
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <select class="form-control table-fields" value="">
+                                                                                <option value=""></option>
+                                                                                <option value="1">123</option>
+                                                                                <option value="2">345</option>
+                                                                                <option value="3">567</option>
+                                                                                <option value="4">789</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td class="text-center">
+                                                                            <input type="button" class="delete-button">
+                                                                            <input type="button" class="add-button">
+                                                                            <input type="button" class="view-button">
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <select class="form-control table-fields" value="">
+                                                                                <option value=""></option>
+                                                                                <option value="1">123</option>
+                                                                                <option value="2">345</option>
+                                                                                <option value="3">567</option>
+                                                                                <option value="4">789</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td class="text-center">
+                                                                            <input type="button" class="delete-button">
+                                                                            <input type="button" class="add-button">
+                                                                            <input type="button" class="view-button">
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <select class="form-control table-fields" value="">
+                                                                                <option value=""></option>
+                                                                                <option value="1">123</option>
+                                                                                <option value="2">345</option>
+                                                                                <option value="3">567</option>
+                                                                                <option value="4">789</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td class="text-center">
+                                                                            <input type="button" class="delete-button">
+                                                                            <input type="button" class="add-button">
+                                                                            <input type="button" class="view-button">
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <select class="form-control table-fields" value="">
+                                                                                <option value=""></option>
+                                                                                <option value="1">123</option>
+                                                                                <option value="2">345</option>
+                                                                                <option value="3">567</option>
+                                                                                <option value="4">789</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td class="text-center">
+                                                                            <input type="button" class="delete-button">
+                                                                            <input type="button" class="add-button">
+                                                                            <input type="button" class="view-button">
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <select class="form-control table-fields" value="">
+                                                                                <option value=""></option>
+                                                                                <option value="1">123</option>
+                                                                                <option value="2">345</option>
+                                                                                <option value="3">567</option>
+                                                                                <option value="4">789</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td class="text-center">
+                                                                            <input type="button" class="delete-button">
+                                                                            <input type="button" class="add-button">
+                                                                            <input type="button" class="view-button">
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <select class="form-control table-fields" value="">
+                                                                                <option value=""></option>
+                                                                                <option value="1">123</option>
+                                                                                <option value="2">345</option>
+                                                                                <option value="3">567</option>
+                                                                                <option value="4">789</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td class="text-center">
+                                                                            <input type="button" class="delete-button">
+                                                                            <input type="button" class="add-button">
+                                                                            <input type="button" class="view-button">
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <!--table end-->
+
+                                                        <input type="button" value="+" class="add-row">
+                                                        <hr>
+                                                    </div>
+
+                                                    <!--Location-->
+                                                    <div id="location" class="tab-pane fade">
+                                                        <div class="scrolling-table fixed-height">
+                                                            <table class="table table-striped">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th scope="col">Name</th>
+                                                                        <th scope="col">Position</th>
+                                                                        <th scope="col">Office</th>
+                                                                        <th scope="col">Age</th>
+                                                                        <th scope="col">Start date</th>
+                                                                        <th scope="col">Salary</th>
+                                                                        <th scope="col">Name</th>
+                                                                        <th scope="col">Position</th>
+                                                                        <th scope="col">Office</th>
+                                                                        <th scope="col">Age</th>
+                                                                        <th scope="col">Start date</th>
+                                                                        <th scope="col">Salary</th>
+                                                                        <th scope="col">Name</th>
+                                                                        <th scope="col">Position</th>
+                                                                        <th scope="col">Office</th>
+                                                                        <th scope="col">Age</th>
+                                                                        <th scope="col">Start date</th>
+                                                                        <th scope="col">Salary</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td>
+                                                                            <select class="form-control table-fields" value="">
+                                                                                <option value=""></option>
+                                                                                <option value="1">123</option>
+                                                                                <option value="2">345</option>
+                                                                                <option value="3">567</option>
+                                                                                <option value="4">789</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td>
+                                                                            <select class="form-control table-fields" value="">
+                                                                                <option value=""></option>
+                                                                                <option value="1">123</option>
+                                                                                <option value="2">345</option>
+                                                                                <option value="3">567</option>
+                                                                                <option value="4">789</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td>
+                                                                            <select class="form-control table-fields" value="">
+                                                                                <option value=""></option>
+                                                                                <option value="1">123</option>
+                                                                                <option value="2">345</option>
+                                                                                <option value="3">567</option>
+                                                                                <option value="4">789</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td>
+                                                                            <select class="form-control table-fields" value="">
+                                                                                <option value=""></option>
+                                                                                <option value="1">123</option>
+                                                                                <option value="2">345</option>
+                                                                                <option value="3">567</option>
+                                                                                <option value="4">789</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td>
+                                                                            <select class="form-control table-fields" value="">
+                                                                                <option value=""></option>
+                                                                                <option value="1">123</option>
+                                                                                <option value="2">345</option>
+                                                                                <option value="3">567</option>
+                                                                                <option value="4">789</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td>
+                                                                            <select class="form-control table-fields" value="">
+                                                                                <option value=""></option>
+                                                                                <option value="1">123</option>
+                                                                                <option value="2">345</option>
+                                                                                <option value="3">567</option>
+                                                                                <option value="4">789</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td>
+                                                                            <select class="form-control table-fields" value="">
+                                                                                <option value=""></option>
+                                                                                <option value="1">123</option>
+                                                                                <option value="2">345</option>
+                                                                                <option value="3">567</option>
+                                                                                <option value="4">789</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td>
+                                                                            <select class="form-control table-fields" value="">
+                                                                                <option value=""></option>
+                                                                                <option value="1">123</option>
+                                                                                <option value="2">345</option>
+                                                                                <option value="3">567</option>
+                                                                                <option value="4">789</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td>
+                                                                            <select class="form-control table-fields" value="">
+                                                                                <option value=""></option>
+                                                                                <option value="1">123</option>
+                                                                                <option value="2">345</option>
+                                                                                <option value="3">567</option>
+                                                                                <option value="4">789</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td>
+                                                                            <select class="form-control table-fields" value="">
+                                                                                <option value=""></option>
+                                                                                <option value="1">123</option>
+                                                                                <option value="2">345</option>
+                                                                                <option value="3">567</option>
+                                                                                <option value="4">789</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td>
+                                                                            <select class="form-control table-fields" value="">
+                                                                                <option value=""></option>
+                                                                                <option value="1">123</option>
+                                                                                <option value="2">345</option>
+                                                                                <option value="3">567</option>
+                                                                                <option value="4">789</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td>
+                                                                            <select class="form-control table-fields" value="">
+                                                                                <option value=""></option>
+                                                                                <option value="1">123</option>
+                                                                                <option value="2">345</option>
+                                                                                <option value="3">567</option>
+                                                                                <option value="4">789</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td>
+                                                                            <select class="form-control table-fields" value="">
+                                                                                <option value=""></option>
+                                                                                <option value="1">123</option>
+                                                                                <option value="2">345</option>
+                                                                                <option value="3">567</option>
+                                                                                <option value="4">789</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td>
+                                                                            <select class="form-control table-fields" value="">
+                                                                                <option value=""></option>
+                                                                                <option value="1">123</option>
+                                                                                <option value="2">345</option>
+                                                                                <option value="3">567</option>
+                                                                                <option value="4">789</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td>
+                                                                            <select class="form-control table-fields" value="">
+                                                                                <option value=""></option>
+                                                                                <option value="1">123</option>
+                                                                                <option value="2">345</option>
+                                                                                <option value="3">567</option>
+                                                                                <option value="4">789</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td>
+                                                                            <select class="form-control table-fields" value="">
+                                                                                <option value=""></option>
+                                                                                <option value="1">123</option>
+                                                                                <option value="2">345</option>
+                                                                                <option value="3">567</option>
+                                                                                <option value="4">789</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td>
+                                                                            <select class="form-control table-fields" value="">
+                                                                                <option value=""></option>
+                                                                                <option value="1">123</option>
+                                                                                <option value="2">345</option>
+                                                                                <option value="3">567</option>
+                                                                                <option value="4">789</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td>
+                                                                            <select class="form-control table-fields" value="">
+                                                                                <option value=""></option>
+                                                                                <option value="1">123</option>
+                                                                                <option value="2">345</option>
+                                                                                <option value="3">567</option>
+                                                                                <option value="4">789</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td>
+                                                                            <select class="form-control table-fields" value="">
+                                                                                <option value=""></option>
+                                                                                <option value="1">123</option>
+                                                                                <option value="2">345</option>
+                                                                                <option value="3">567</option>
+                                                                                <option value="4">789</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td>
+                                                                            <select class="form-control table-fields" value="">
+                                                                                <option value=""></option>
+                                                                                <option value="1">123</option>
+                                                                                <option value="2">345</option>
+                                                                                <option value="3">567</option>
+                                                                                <option value="4">789</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td>
+                                                                            <select class="form-control table-fields" value="">
+                                                                                <option value=""></option>
+                                                                                <option value="1">123</option>
+                                                                                <option value="2">345</option>
+                                                                                <option value="3">567</option>
+                                                                                <option value="4">789</option>
+                                                                            </select>
+                                                                        </td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                        <td><input type="text" class="form-control table-fields"></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Sub Tab End -->
+                                        </div>
+                                        <!-- Tab BODY ONE end -->
+                                        <!-- Tab BODY TWO start -->
+                                        <div role="tabpanel" class="tab-pane fade" id="applicant">
+                                            <!-- Sub Tab Start -->
+                                            <div class="sub-tab-section">
+                                                <!--Sub Menu Start-->
+                                                <ul class="sub-menu nav">
+                                                    <li class="active"><a data-toggle="pill" href="#tab-1">TAB 2.1</a></li>
+                                                    <li><a data-toggle="pill" href="#tab-2">TAB 2.2</a></li>
+                                                    <li><a data-toggle="pill" href="#tab-3">TAB 2.3</a></li>
+                                                    <li><a data-toggle="pill" href="#tab-4">TAB 2.4</a></li>
+                                                </ul>
+                                                <!--Sub Menu End-->
+                                                <div class="tab-content">
+                                                    <!--TAB 2.1-->
+                                                    <div id="tab-1" class="tab-pane fade in active">
+                                                        <form role="form">
+                                                            <div class="col-md-3 col-sm-4 col-xs-12">
+                                                                <div class="form-group">
+                                                                    <label for="name">Team</label>
+                                                                    <input type="text" class="form-control" placeholder="Enter Team">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-3 col-sm-4 col-xs-12">
+                                                                <div class="form-group">
+                                                                    <label for="name">Team</label>
+                                                                    <input type="text" class="form-control" placeholder="Enter Team">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-3 col-sm-4 col-xs-12">
+                                                                <div class="form-group">
+                                                                    <label class="radio-label">Officer</label>
+                                                                    <label class="radio">
+                                                                        <input type="radio" name="r" value="1" checked="">
+                                                                        <span>Radio 1</span>
+                                                                    </label>
+                                                                    <label class="radio">
+                                                                        <input type="radio" name="r" value="2">
+                                                                        <span>Radio 2</span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-3 col-sm-4 col-xs-12">
+                                                                <div class="form-group">
+                                                                    <label for="name">Team</label>
+                                                                    <input type="text" class="form-control" placeholder="Enter Team">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-3 col-sm-4 col-xs-12">
+                                                                <div class="form-group">
+                                                                    <label for="name">Team</label>
+                                                                    <input type="text" class="form-control" placeholder="Enter Team">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-3 col-sm-4 col-xs-12">
+                                                                <div class="form-group">
+                                                                    <label for="name">Team</label>
+                                                                    <input type="text" class="form-control" placeholder="Enter Team">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-3 col-sm-4 col-xs-12">
+                                                                <div class="form-group">
+                                                                    <label for="name">Team</label>
+                                                                    <input type="text" class="form-control" placeholder="Enter Team">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-3 col-sm-4 col-xs-12">
+                                                                <div class="form-group">
+                                                                    <label for="name">Team</label>
+                                                                    <input type="text" class="form-control" placeholder="Enter Team">
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+
+                                                    <!--TAB 2.2-->
+                                                    <div id="tab-2" class="tab-pane fade">
+                                                        <form role="form">
+                                                            <div class="col-md-3 col-sm-4 col-xs-12">
+                                                                <div class="form-group">
+                                                                    <label for="name">Team</label>
+                                                                    <input type="text" class="form-control" placeholder="Enter Team">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-3 col-sm-4 col-xs-12">
+                                                                <div class="form-group">
+                                                                    <label for="name">Team</label>
+                                                                    <select class="form-control" value="">
+                                                                        <option value=""></option>
+                                                                        <option value="1">123</option>
+                                                                        <option value="2">345</option>
+                                                                        <option value="3">567</option>
+                                                                        <option value="4">789</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-3 col-sm-4 col-xs-12">
+                                                                <div class="form-group">
+                                                                    <label class="radio-label">Officer</label>
+                                                                    <label class="radio">
+                                                                        <input type="radio" name="r" value="1" checked="">
+                                                                        <span>Radio 1</span>
+                                                                    </label>
+                                                                    <label class="radio">
+                                                                        <input type="radio" name="r" value="2">
+                                                                        <span>Radio 2</span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-3 col-sm-4 col-xs-12">
+                                                                <div class="form-group">
+                                                                    <label for="name">Team</label>
+                                                                    <input type="text" class="form-control" placeholder="Enter Team">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-3 col-sm-4 col-xs-12">
+                                                                <div class="form-group">
+                                                                    <label for="name">Team</label>
+                                                                    <input type="text" class="form-control" placeholder="Enter Team">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-3 col-sm-4 col-xs-12">
+                                                                <div class="form-group">
+                                                                    <label for="name">Team</label>
+                                                                    <input type="text" class="form-control" placeholder="Enter Team">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-3 col-sm-4 col-xs-12">
+                                                                <div class="form-group">
+                                                                    <label for="name">Team</label>
+                                                                    <input type="text" class="form-control" placeholder="Enter Team">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-3 col-sm-4 col-xs-12">
+                                                                <div class="form-group">
+                                                                    <label for="name">Team</label>
+                                                                    <input type="text" class="form-control" placeholder="Enter Team">
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+
+                                                    <!--TAB 2.3-->
+                                                    <div id="tab-3" class="tab-pane fade">
+                                                        <h3>TAB 2.3</h3>
+                                                        <p>Some content.</p>
+                                                    </div>
+
+                                                    <!--TAB 2.4-->
+                                                    <div id="tab-4" class="tab-pane fade">
+                                                        <h3>TAB 2.4</h3>
+                                                        <p>Some content.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Sub Tab End -->
+                                        </div>
+                                        <!-- Tab BODY TWO end -->
+                                        <!-- Tab BODY THREE start-->
+                                        <div role="tabpanel" class="tab-pane fade" id="assets">
+                                            <h1>Assets</h1>
+                                        </div>
+                                        <!-- Tab BODY THREE end -->
+                                        <!-- Tab BODY FOUR start -->
+                                        <div role="tabpanel" class="tab-pane fade" id="income">
+                                            <h1>Income</h1>
+                                        </div>
+                                        <!-- Tab BODY FOUR end -->
+                                        <!-- Tab BODY FIVE start -->
+                                        <div role="tabpanel" class="tab-pane fade" id="verification">
+                                            <h1>Verification</h1>
+                                        </div>
+                                        <!-- Tab BODY FIVE end -->
+                                        <!-- Tab BODY SIX start -->
+                                        <div role="tabpanel" class="tab-pane fade" id="docs">
+                                            <h1>Docs</h1>
+                                        </div>
+                                        <!-- Tab BODY SIX end -->
+                                    </div>
+                                </div>
+                                <!-- TAB BODY CONTENT END -->
+                            </div>
+                        </div>
+                        <!-- Body Content Ends -->
+                    </div>
+                </div>
+                <!-- Dashboard left Body conent ends -->
+            </div>
+            <!--Footer Start-->
+            <div class="footer">
+                Powered by Servosys Solutions
+            </div>
+            <!--Footer End-->
+        </div>
+        <script src="js/jquery.js"></script>
+        <script src="js/datepicker.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.responsivetabs.js"></script>
+        <script src="js/select2.min.js"></script>
+        <!--Responsive DataTable JS-->
+        <script src="js/jquery.dataTables.js"></script>
+        <script src="js/dataTables.bootstrap.min.js"></script>
+        <script src="js/dataTables.responsive.min.js"></script>
+        <script src="js/responsive.bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>

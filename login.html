@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/fontawesome.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/media-query.css" type="text/css">
+        <link href="css/select2.min.css" rel="stylesheet" type="text/css">
+        <link href="css/media-query.css" rel="stylesheet" type="text/css">
+        <title>Agri Portfolio Management System</title>
+	</head>
+    <!-- //Head -->
+    <!-- Body -->
+    <body id="agri-login-page">
+		<div class="agri-login-box">
+			<!--Loader Start-->
+			<div class="loading" hidden>
+				<div class="mask"></div>
+				<div class="cssload-loader"><span class="cssload-loader-inner"></span></div>
+				<div class="processRequest">Processing your request</div>
+			</div>
+			<!--Loader End-->
+			<!--MAIN START-->
+			<main class="agri-login-content">
+				<div class="agri-login-left hidden-sm hidden-xs"></div>
+				<div class="agri-login-right">
+					<div class="agri-icici-logo">
+						<img src="images/logo.svg" />
+					</div>
+					<div class="agri-login-title">I-COS <span>AGRI Portfolio <br> Management System</span></div>
+					<ul class="nav nav-pills login-tab">
+						<li class="active"><a data-toggle="pill" href="#external-user">External User</a></li>	
+						<li><a data-toggle="pill" href="#internal-user">Internal User</a></li>
+					</ul>
+					<div class="tab-content">
+						<div id="external-user" class="tab-pane fade in agri-login-form active">
+							<div class="form-group">
+								<label>Username</label>
+								<input type="text">
+							</div>
+							<div class="form-group">
+								<label>Password</label>
+								<input type="password">
+							</div>
+							<!-- <div class="form-checkbox">
+								<input type="checkbox" id="concent"> <label for="concent"> <span>I hereby authorize ICICI Bank and its representative to contact on the registered mobile number and email-address. This consent shall override any registration for DND (if applicable).</span></label>
+							</div> -->
+							<input type="button" class="button login-btn" value="LOGIN" onClick="window.location.href='dashboard.html';" />
+						</div>
+						<div id="internal-user" class="tab-pane fade agri-login-form">
+							<div class="form-group">
+								<label>Mobile No.</label>
+								<input type="text">
+							</div>
+							<!--hidden otp section-->
+							<div class="hidden-otp" style="display:none;">
+								<div class="form-group">
+									<label>OTP</label>
+									<input type="text">
+								</div>
+								<div class="form-group">
+									<input type="submit" class="button login-btn" value="Login" onClick="window.location.href='index.html';">
+									<input type="submit" class="button login-btn" value="Resend OTP">
+								</div>
+							</div>
+							<!--hidden otp section-->
+							<div class="form-group">
+								<input type="button" class="button login-btn hide-otp" value="Send OTP">
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+			<!--MAIN END-->
+			<!--SCRIPT JS-->
+		</div>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+	</body>
+</html>

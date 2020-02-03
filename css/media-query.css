@@ -1,0 +1,44 @@
+@media only screen  and (min-width : 1440px){
+.agri-login-content{width:calc(100% - 30%); left: 15%;}
+}
+@media only screen and (max-width: 425px){
+.agri-icici-logo img{width: 60%;}
+.agri-login-form{width: 90%;}
+.agri-login-title{font-size: 1.5em;}
+.form-checkbox span{font-size: 12px;}
+}
+@media only screen and (max-width: 768px){
+/*Dashboard*/
+#close-sidebar-btn{display: none;}
+#sidebar{position: absolute;z-index: 99999;width: 200px;right:-200px;top:0; -moz-transition: right 0.2s linear; -o-transition: right 0.2s linear; -webkit-transition: right 0.2s linear; transition: right 0.2s linear; }
+.sidebar-content{overflow-y: auto; height: 100%}
+.responsive-sidebar{right:0px !important; transition: 0.8s ease all; }
+.sidebar-open{right: 0; left: auto}
+#close-sidebar-btn-responsive{display: block; }
+#close-sidebar-btn-responsive.close-sidebar {height: 40px; width: 40px; padding: 10px; background-color: #917bb9; position: absolute; left: -40px; cursor: pointer; overflow: hidden; }
+.body{overflow-x:hidden;}
+#dashboard-right-body{width: 100%}
+.dashboard-logo-container{float: left;}
+.second-level{padding: 0;}
+.action-button{float: none !important; text-align: center;}
+.action-button input{margin:2px ;}
+.breadcrumb{padding: 0 10px; position: relative;}
+.agri-login-right{width:100%; border-radius:.8em;}
+.logout-btn {margin-right: 30px;}
+.top-navigation{margin-left: -40px;}
+/*Dashboard Ends*/
+}
+
+
+@media only screen and (max-width: 357px){
+.top-navigation li{text-align: center; line-height: 12px;}
+.header{min-height: 58px;}
+.username{float: none !important;text-align: center !important;display: block !important;}
+}
+
+@media only screen and (min-width: 768px){}
+
+@media only screen and (min-width: 1024px){}
+
+@media only screen and (min-width: 1366px){}
+
